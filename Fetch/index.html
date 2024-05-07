@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Usuários</title>
+    <style>
+        /* Estilos CSS para a exibição dos usuários */
+        .user-container {
+            display: flex; /* Define o contêiner como flexível */
+            justify-content: space-around; /* Distribui os itens igualmente na linha */
+            flex-wrap: wrap; /* Permite que os itens flexíveis sejam quebrados em várias linhas */
+        }
+
+        .user {
+            border: 1px solid #ccc;
+            padding: 10px;
+            margin: 5px; /* Margem entre os usuários */
+            width: calc(33.33% - 10px); /* Calcula a largura de cada usuário para distribuir em 3 colunas */
+        }
+
+        /* Estilo para o título */
+        h1 {
+            font-family: 'Roboto', sans-serif;
+            color: #333;
+            text-align: center; /* Centraliza o texto horizontalmente */
+            margin-top: 50px; /* Adiciona espaço acima do título */
+        }
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <h1>Lista de Usuários</h1>
+
+    <!-- Contêiner flexível para os usuários -->
+    <div class="user-container" id="userList">
+        <!-- Os usuários serão inseridos aqui -->
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
